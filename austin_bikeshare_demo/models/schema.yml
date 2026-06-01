@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: fact_trips
+    description: "Fact table for bike trips"
+    columns:
+      - name: trip_id
+        description: "Primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: start_station_id
+        description: "Foreign key to dim_station"
+      - name: end_station_id
+        description: "Foreign key to dim_station"

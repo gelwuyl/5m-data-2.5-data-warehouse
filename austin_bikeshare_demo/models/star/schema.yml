@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: dim_station
+    description: "Dimension table for bike stations"
+    columns:
+      - name: station_id
+        description: "Primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: total_duration
+        description: "Total trip duration for the station in seconds"
+        tests:
+          - not_null
+      - name: total_starts
+        description: "Total number of trips that started at this station"
+        tests:
+          - not_null
+      - name: total_ends
+        description: "Total number of trips that ended at this station"
+        tests:
+          - not_null
