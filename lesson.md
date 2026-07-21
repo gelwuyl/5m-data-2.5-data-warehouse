@@ -446,7 +446,7 @@ Answer the prompts as follows:
 - **Threads / timeout:** accept the defaults
 - **Location:** `US` (the public dataset lives in US)
 
-Once complete you will see a confirmation message and a new `austin_bikeshare_demo/` folder.
+> Once complete you will see a confirmation message and a new `austin_bikeshare_demo/` folder.
 
 ![dbt init success message](assets/dbt_init_msg.PNG)
 
@@ -470,7 +470,7 @@ conda activate elt
 dbt debug
 ```
 
-Resolve any errors before continuing.
+> Resolve any errors before continuing.
 
 ---
 
@@ -507,7 +507,7 @@ Using the liquor sales project as a reference, create:
 - Include the descriptive attributes: station name, location, etc.
 - Reference the source with `{{ source(...) }}`.
 
-Think about whether you need a snapshot. Ask yourself: _could a station's name or location change over time?_ If yes, the same SCD pattern from Exercise 1 applies.
+> Think about whether you need a snapshot. Ask yourself: could a station's name or location change over time? If yes, the same SCD pattern from Exercise 1 applies.
 
 ---
 
@@ -525,7 +525,7 @@ dbt run
 dbt test
 ```
 
-All tests should pass.
+> All tests should pass.
 
 ---
 
