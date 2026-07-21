@@ -204,7 +204,7 @@ dbt run
 
 ---
 
-#### Tests: Verifying Data Quality
+### Tests: Verifying Data Quality
 
 Running transformations is only half the job. A data warehouse that silently produces wrong results is worse than one that fails loudly. dbt's built-in testing framework lets you assert data quality rules that run against the materialised tables.
 
